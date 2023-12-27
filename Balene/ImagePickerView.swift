@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ImagePickerView: UIViewControllerRepresentable {
     
-    @Binding var selectedImage: UIImage?
+
     @Binding var isPickerShowing: Bool
         
     func makeUIViewController(context: Context) -> UIImagePickerController {
@@ -41,7 +41,8 @@ class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationContro
         
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             DispatchQueue.main.async{
-                self.parent.selectedImage = image
+                //print("hello")
+                APIClient.shared.makeAPIrequest(uiimage: image)
             }
         }
         self.parent.isPickerShowing = false
@@ -52,3 +53,4 @@ class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationContro
         self.parent.isPickerShowing = false
     }
 }
+

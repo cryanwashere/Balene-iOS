@@ -6,16 +6,51 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
+    
+    @ObservedObject var api_client = APIClient.shared
+    
+    // State variables for the user interface
+    @State var showingPicker = false
+    @State var isLoading : Bool = false
+    @State var showError : Bool = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            if api_client.selectedImage != nil {
+                
+                Image(uiImage: api_client.selectedImage!)
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
+            }
+            
+            Button {
+                showingPicker = true
+                isLoading = false
+                print("opening photo library...")
+            } label: {
+                Text("search image")
+                    .foregroundColor(.white)
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 175, height: 50, alignment: .center)
+                            .foregroundColor(.blue)
+                    )
+            }.padding()
+            
+            
+            if api_client.results != nil {
+                SearchResultsView(results: api_client.results!)
+            }
         }
-        .padding()
+        .sheet(isPresented: $showingPicker) {
+            ImagePickerView(isPickerShowing: $showingPicker)
+        }
     }
 }
 

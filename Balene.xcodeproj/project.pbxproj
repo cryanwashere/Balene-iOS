@@ -16,6 +16,8 @@
 		714082732B3276A30099F53B /* BaleneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714082722B3276A30099F53B /* BaleneUITestsLaunchTests.swift */; };
 		71EB4FB02B3C6D0500F114BA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB4FAF2B3C6D0500F114BA /* APIClient.swift */; };
 		71EB4FB22B3C6D5600F114BA /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB4FB12B3C6D5600F114BA /* ImagePickerView.swift */; };
+		71EB4FB42B3C85D000F114BA /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB4FB32B3C85D000F114BA /* SearchResultsView.swift */; };
+		71EB4FB62B3C920800F114BA /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB4FB52B3C920800F114BA /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		714082722B3276A30099F53B /* BaleneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaleneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		71EB4FAF2B3C6D0500F114BA /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		71EB4FB12B3C6D5600F114BA /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		71EB4FB32B3C85D000F114BA /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
+		71EB4FB52B3C920800F114BA /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				714082542B3276A00099F53B /* BaleneApp.swift */,
 				71EB4FAF2B3C6D0500F114BA /* APIClient.swift */,
 				714082562B3276A00099F53B /* ContentView.swift */,
+				71EB4FB32B3C85D000F114BA /* SearchResultsView.swift */,
+				71EB4FB52B3C920800F114BA /* UIImageExtension.swift */,
 				71EB4FB12B3C6D5600F114BA /* ImagePickerView.swift */,
 				714082582B3276A20099F53B /* Assets.xcassets */,
 				7140825A2B3276A20099F53B /* Balene.entitlements */,
@@ -267,8 +273,10 @@
 			files = (
 				71EB4FB22B3C6D5600F114BA /* ImagePickerView.swift in Sources */,
 				714082572B3276A00099F53B /* ContentView.swift in Sources */,
+				71EB4FB42B3C85D000F114BA /* SearchResultsView.swift in Sources */,
 				714082552B3276A00099F53B /* BaleneApp.swift in Sources */,
 				71EB4FB02B3C6D0500F114BA /* APIClient.swift in Sources */,
+				71EB4FB62B3C920800F114BA /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
