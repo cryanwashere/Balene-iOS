@@ -14,6 +14,8 @@
 		714082672B3276A30099F53B /* BaleneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714082662B3276A30099F53B /* BaleneTests.swift */; };
 		714082712B3276A30099F53B /* BaleneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714082702B3276A30099F53B /* BaleneUITests.swift */; };
 		714082732B3276A30099F53B /* BaleneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714082722B3276A30099F53B /* BaleneUITestsLaunchTests.swift */; };
+		71EB4FB02B3C6D0500F114BA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB4FAF2B3C6D0500F114BA /* APIClient.swift */; };
+		71EB4FB22B3C6D5600F114BA /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EB4FB12B3C6D5600F114BA /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		7140826C2B3276A30099F53B /* BaleneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaleneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		714082702B3276A30099F53B /* BaleneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaleneUITests.swift; sourceTree = "<group>"; };
 		714082722B3276A30099F53B /* BaleneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaleneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		71EB4FAF2B3C6D0500F114BA /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		71EB4FB12B3C6D5600F114BA /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				714082542B3276A00099F53B /* BaleneApp.swift */,
+				71EB4FAF2B3C6D0500F114BA /* APIClient.swift */,
 				714082562B3276A00099F53B /* ContentView.swift */,
+				71EB4FB12B3C6D5600F114BA /* ImagePickerView.swift */,
 				714082582B3276A20099F53B /* Assets.xcassets */,
 				7140825A2B3276A20099F53B /* Balene.entitlements */,
 				7140825B2B3276A20099F53B /* Preview Content */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71EB4FB22B3C6D5600F114BA /* ImagePickerView.swift in Sources */,
 				714082572B3276A00099F53B /* ContentView.swift in Sources */,
 				714082552B3276A00099F53B /* BaleneApp.swift in Sources */,
+				71EB4FB02B3C6D0500F114BA /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
