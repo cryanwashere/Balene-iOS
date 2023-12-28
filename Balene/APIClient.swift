@@ -32,7 +32,7 @@ class APIClient : ObservableObject {
         
         //self.selectedImage = uiimage
         
-        let smaller_image = uiimage.aspectFittedToHeight(100)
+        let smaller_image = uiimage.aspectFittedToHeight(75)
         self.selectedImage = smaller_image
         
         // The image needs to be converted to jpeg data so that the API can read it

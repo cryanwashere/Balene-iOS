@@ -68,7 +68,10 @@ struct WikipediaPageView : View {
                                 .bold()
                             Spacer()
                         }
-                        Text(wikipedia_client.wikipediaPageInfo!.description)
+                        HStack {
+                            Text(wikipedia_client.wikipediaPageInfo!.description)
+                            Spacer()
+                        }
                     }
                     
                 }
@@ -128,7 +131,8 @@ class WikipediaAPIClient : ObservableObject {
                 
                 var url_string = image_url
                 if url_string == nil {
-                    url_string = self.wikipediaPageInfo!.thumbnail.source
+                    return
+                    //url_string = self.wikipediaPageInfo!.thumbnail.source
                 }
                 
                 if let url = URL(string:url_string!), let imageData = try? Data(contentsOf: url), let uiImage = UIImage(data: imageData) {
@@ -147,13 +151,13 @@ class WikipediaAPIClient : ObservableObject {
 // structures that are used to decode responses from the wikipedia API
 struct WikipediaPageInfo : Codable {
     let title: String
-    let displaytitle: String
-    let extract: String
+    let displaytitle: String?
+    let extract: String?
     let description: String
     
-    let thumbnail : Thumbnail
-    let originalimage : Originalimage
-    let content_urls : Content_urls
+    let thumbnail : Thumbnail?
+    let originalimage : Originalimage?
+    let content_urls : Content_urls?
     
     
     struct Thumbnail : Codable {
